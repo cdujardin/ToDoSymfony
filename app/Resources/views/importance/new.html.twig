@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+
+<!--Form add / modify -->
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+        <h1 class="title">Créer une importance </h1>
+        {{ form_start(form) }}
+          {{ form_widget(form) }}
+          <div class="row btnedit">
+            <div class="col-xs-10">
+              <input class="btn btn-secondary submit" type="submit" value="Créer" />
+            </div>
+
+            <div class="col-xs-2 icon"/>
+              <a href="{{ path('importance_index') }}"><img src="{{ asset('img/return.png') }}" alt="Retour"/></a>
+            </div>
+          </div>
+      {{ form_end(form) }}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

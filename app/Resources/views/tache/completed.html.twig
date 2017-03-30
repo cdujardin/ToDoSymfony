@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <!-- Task -->
+    <div class="container">
+      <div class="row tache">
+        <h1 class="title">Completed</h1>
+        {% for tache in taches %}
+        <div class="col-xs-9">
+          <p class="name">{{ tache.nom }}</p>
+          <p class="details">{{ tache.details }}</p>
+        </div>
+        <div class="col-xs-2">
+          <a href="{{ path('tache_show', { 'id': tache.id }) }}"><img src="{{ asset('img/view.png') }}" alt="En savoir plus"/></a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+{% endblock %}

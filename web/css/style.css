@@ -1,0 +1,118 @@
+body {
+  color: #333;
+  font-family: "Playfair Display", serif; }
+  body .tache {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #F5F6F6;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    body .tache input {
+      vertical-align: middle;
+      margin: 18px; }
+    body .tache .name {
+      margin-left: 20px;
+      font-family: "Playfair Display SC", serif;
+      font-size: 14px;
+      color: #333; }
+    body .tache .details, body .tache .weight {
+      margin-left: 35px;
+      font-size: 10px;
+      color: #888;
+      font-style: italic; }
+    body .tache a {
+      vertical-align: middle;
+      text-align: right; }
+      body .tache a img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 35px; }
+  body .add {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  body .btnadd {
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: #F5F6F6; }
+  body .addp {
+    color: #333;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 20px;
+    text-align: right;
+    font-family: "Playfair Display SC", serif; }
+  body .addimg {
+    height: 20px;
+    display: inline-block; }
+
+nav {
+  font-family: "Playfair Display SC", serif; }
+
+body {
+  color: #333; }
+  body h1 {
+    color: #63D4A7;
+    font-family: "Playfair Display SC", serif; }
+  body #datepicker {
+    font-family: serif; }
+  body .dropdown-toggle {
+    width: 100%;
+    height: 50px; }
+  body .dropdown-menu {
+    width: 100%; }
+  body .dropdown-menu a {
+    display: block;
+    padding: 5px;
+    padding-left: 15px;
+    color: #333;
+    text-align: center; }
+  body .submit {
+    width: 100%;
+    background-color: #63D4A7; }
+  body .diveffectuee {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); }
+  body .effectuee {
+    display: inline-block;
+    position: relative; }
+  body .diveffectuee label {
+    padding-left: 10px;
+    left: 50%;
+    transform: translateX(-50%); }
+
+/*# sourceMappingURL=main.css.map */
+
+.title{
+  text-align: center;
+}
+.icon{
+  display: inline-block;
+}
+.icon a {
+  display: inline-block;
+}
+.icon  a img, .icon-delete{
+  height: 40px;
+}
+.btnedit{
+margin-bottom: 50px;
+}
+.icon-return{
+  vertical-align: baseline;
+}
+form[name="form"]{
+  display: inline-block;
+
+}

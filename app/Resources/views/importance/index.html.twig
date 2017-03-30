@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+
+
+
+
+    <!-- Button add task-->
+    <div class="container">
+      <div class="row add">
+      <a href="{{ path('importance_new') }}">
+          <div class="col-xs-12 ">
+            <button type="button" class="btn btn-default btnadd">
+              <img class="addimg" src="{{ asset('img/add.png') }}" alt="add"/>
+              <p class="addp">Add a importance</p>
+            </button>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Task -->
+    <div class="container">
+      <div class="row tache">
+        {% for importance in importances %}
+
+        <div class="col-xs-9">
+          <p class="name">{{ importance.nom }}</p>
+          <p class="details">{{ importance.poids }}</p>
+
+
+        </div>
+        <div class="col-xs-2">
+          <a href="{{ path('importance_edit', { 'id': importance.id }) }}"><img src="{{ asset('img/modify.png') }}" alt="modifier"/></a>
+          <a href="{{ path('importance_show', { 'id': importance.id }) }}"><img src="{{ asset('img/view.png') }}" alt="En savoir plus"/></a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+
+
+
+
+
+{% endblock %}

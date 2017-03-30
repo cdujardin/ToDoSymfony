@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% form_theme edit_form 'bootstrap_3_layout.html.twig' %}
+
+{% block body %}
+    <div class="container">
+      <div class="col-xs-12">
+          <h1 class="title">Modifier une importance </h1>
+          <div class="row btnedit">
+            {{ form_start(edit_form) }}
+            <div class="col-md-10">
+
+              {{ form_widget(edit_form) }}
+            </div>
+            <div class="col-md-2"/>
+            </div>
+            <div class="col-md-10">
+              <input class="btn btn-secondary submit" type="submit" value="Modifier" />
+            </div>
+            {{ form_end(edit_form) }}
+            <div class="col-md-2 icon"/>
+              <a href="{{ path('importance_index') }}"><img class="icon-return"src="{{ asset('img/return.png') }}" alt="Retour"/></a>
+              {% if importance.taches.isEmpty() %}
+                {{ form_start(delete_form) }}
+                  <input class="icon-delete" type="image" src="{{ asset('img/remove.png') }}" alt="effacer"/>
+                {{ form_end(delete_form) }}
+              {% endif %}
+            </div>
+          </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+{% endblock %}

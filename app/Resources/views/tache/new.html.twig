@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_3_layout.html.twig' %}
+
+
+{% block body %}
+
+
+<!--Form add / modify -->
+<div class="container">
+  <div class="col-xs-12">
+    <h1 class="title">Créer une tâche </h1>
+    <div class="row btnedit">
+      {{ form_start(form) }}
+      <div class="col-md-10">
+
+        {{ form_widget(form) }}
+      </div>
+      <div class="col-md-2"/>
+      </div>
+      <div class="col-md-10">
+        <input class="btn btn-secondary submit" type="submit" value="Créer" />
+      </div>
+      {{ form_end(form) }}
+      <div class="col-md-2 icon"/>
+        <a href="{{ path('tache_index') }}"><img class="icon-return"src="{{ asset('img/return.png') }}" alt="Retour"/></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

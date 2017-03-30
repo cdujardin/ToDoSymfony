@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1 class="title">Importance "{{ importance.nom }}"</h1>
+
+
+<div class="container">
+  <div class="row tache">
+    <div class="col-xs-9">
+      <p>id : {{ importance.id }}</p>
+      <p>Nom : {{ importance.nom }}</p>
+      <p>Poids : {{ importance.poids }}</p>
+    </div>
+    <div class="col-xs-3 icon">
+      <a href="{{ path('importance_index') }}"><img src="{{ asset('img/return.png') }}" alt="Retour"/></a>
+      <a  href="{{ path('importance_edit', { 'id': importance.id }) }}"><img src="{{ asset('img/modify.png') }}" alt="Modifier"/></a>
+      {{ form_start(delete_form) }}<input class="icon-delete" type="image" src="{{ asset('img/remove.png') }}" alt="effacer"/>{{ form_end(delete_form) }}
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+{% endblock %}
